@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <movie-list-component :movies="movies"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import MovieListComponent from '../components/partials/MovieList'
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld
+  components: { MovieListComponent },
+  data: () => {
+    return {
+      movies: [ { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' } ]
+    }
   }
 }
 </script>
