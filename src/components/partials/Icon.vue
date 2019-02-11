@@ -1,7 +1,7 @@
 <template>
   <div class="icon">
     <svg>
-      <use :xlink:href="iconSrc()" width="10" height="19"></use>
+      <use :xlink:href="iconSrc()"></use>
     </svg>
   </div>
 </template>

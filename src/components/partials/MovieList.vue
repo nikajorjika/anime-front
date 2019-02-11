@@ -36,9 +36,9 @@ export default {
 <style lang="scss" scoped>
 .movie-list {
   padding: 20px;
-  .list-title{
-    h2{
-      margin:0 0 20px;
+  .list-title {
+    h2 {
+      margin: 0 0 20px;
       font-size: 25px;
       font-weight: normal;
     }
@@ -46,15 +46,18 @@ export default {
   ul {
     padding: 0;
     margin: 0;
-    &.slider{
+    &.slider {
       display: flex;
       overflow: hidden;
     }
-    &.list{
+    &.list {
       display: grid;
-      grid-template-columns: repeat(auto-fit,  minmax(350px, 1fr) );
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       grid-column-gap: 20px;
       grid-row-gap: 20px;
+    }
+    li{
+      position: relative;
     }
   }
 }

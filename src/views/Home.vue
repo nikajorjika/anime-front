@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <movie-list-component :movies="movies"/>
+    <movie-list-component :movies="$store.getters.movies"/>
   </div>
 </template>
 
@@ -10,11 +10,6 @@ import MovieListComponent from '../components/partials/MovieList'
 
 export default {
   name: 'home',
-  components: { MovieListComponent },
-  data: () => {
-    return {
-      movies: [ { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' }, { name: 'Kill La Kill' } ]
-    }
-  }
+  components: { MovieListComponent }
 }
 </script>
