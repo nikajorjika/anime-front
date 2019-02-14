@@ -2,6 +2,7 @@
   <div id="app">
     <navigation-component/>
     <router-view/>
+    <movie-info-component/>
   </div>
 </template>
 
@@ -27,7 +28,8 @@ ul {
 </style>
 <script>
 import NavigationComponent from './components/layouts/Navigation'
+import MovieInfoComponent from './components/partials/MovieInfoPopup'
 export default {
-  components: { NavigationComponent }
+  components: { MovieInfoComponent, NavigationComponent }
 }
 </script>

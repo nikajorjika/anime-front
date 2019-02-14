@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     openMovieInfo: function () {
-      console.log('open: ' + this.movie.src)
+      this.$store.commit('SET_MOVIE', this.movie)
     }
   }
 }
